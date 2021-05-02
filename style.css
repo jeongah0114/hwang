@@ -1,0 +1,280 @@
+* {
+  list-style: none;
+  text-decoration: none;
+  border-collapse: collapse;
+  margin: 0px;
+  padding: 0px;
+  color: #707070;
+  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Nanum Myeongjo", serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+.wrap {
+  position: relative;
+}
+
+.header {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 32px;
+  border-bottom: 1px solid #e1e1e1;
+  padding: 10px;
+  z-index: 1;
+}
+
+.sub {
+  background: #fff;
+}
+
+.header > h1 {
+  width: 60%;
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 14px;
+  letter-spacing: 10px;
+  padding: 8px 0px 0px 56px;
+}
+
+.nav {
+  width: 40%;
+  font-size: 13px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 8px 56px 0px 0px;
+}
+
+.nav > li {
+  margin-left: 80px;
+}
+
+.nav > li > a:hover {
+  color: #548f5e;
+  text-decoration: underline 2px #79b183;
+}
+
+.nav > li > a.current {
+  color: #548f5e;
+  text-decoration: underline 2px #79b183;
+}
+
+.intro_text {
+  position: relative;
+  width: 1280px;
+  margin: auto;
+  top: 250px;
+}
+
+.intro_text > h1 {
+  padding: 56px;
+  font-weight: 400;
+  font-size: 82px;
+}
+
+.animate__animated {
+  animation-delay: 0.5s;
+}
+
+.intro_profile {
+  width: 100%;
+  height: 1000px;
+}
+.profile_bg {
+  background: url(img/bg01.png) no-repeat;
+  width: 780px;
+  height: 981px;
+  float: right;
+  margin: 20px 0 0 0;
+}
+
+.hwang_profile {
+  position: relative;
+  width: 1280px;
+  top: 700px;
+  margin: auto;
+  font-size: 14px;
+}
+.hwang_photo > img {
+  position: absolute;
+  top: 0;
+  left: 56px;
+  width: 500px;
+}
+.skill {
+  position: absolute;
+  top: 0px;
+  left: 610px;
+  color: #c2c2c2;
+}
+
+.profile {
+  position: absolute;
+  top: 80px;
+  left: 610px;
+}
+
+.text_01 {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.text_01 > li > span {
+  font-size: 12px;
+  font-weight: 700;
+  color: #548f5e;
+}
+.text_01 .contact {
+  font-size: 14px;
+  padding-top: 30px;
+}
+.text_02 {
+  font-size: 12px;
+  margin: 40px 0 0 0;
+  line-height: 2;
+}
+.text_02 > .title {
+  margin: 24px 0 4px 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.text_02 > ul > li > span {
+  padding: 0 24px 0 0;
+}
+
+.work_sub {
+  padding: 0 0 10px 51px;
+}
+
+footer {
+  line-height: 3;
+  color: #c2c2c2;
+  text-align: center;
+  border-top: 1px solid #f5f5f5;
+  font-size: 12px;
+  position: relative;
+  margin-top: 30%;
+  bottom: 0px;
+  width: 100%;
+  height: 40px;
+  background: #fff;
+}
+
+/*web*/
+
+.cont_list {
+  position: relative;
+  top: 140px;
+  width: 1500px;
+  margin: auto;
+}
+
+.cont_nav input[type="radio"] {
+  display: none;
+}
+#tab-1:checked ~ .tab label:nth-child(1),
+#tab-2:checked ~ .tab label:nth-child(2),
+#tab-3:checked ~ .tab label:nth-child(3),
+#tab-4:checked ~ .tab label:nth-child(4) {
+  color: #548f5e;
+  box-shadow: none;
+}
+.content > div {
+  display: none;
+}
+#tab-1:checked ~ .content div:nth-child(1),
+#tab-2:checked ~ .content div:nth-child(2),
+#tab-3:checked ~ .content div:nth-child(3),
+#tab-4:checked ~ .content div:nth-child(4) {
+  display: block;
+}
+.main {
+}
+.tab {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  line-height: 3;
+  width: 140px;
+}
+.tab > label {
+  font-size: 12px;
+  -webkit-user-select: none;
+}
+
+.content {
+  position: absolute;
+  width: 1400px;
+  top: 0;
+  left: 200px;
+  min-height: 800px;
+}
+
+.content_dis {
+  width: 1280px;
+  margin: AUTO;
+  padding: 0px 0 100px 0;
+}
+
+.content_dis > h2 {
+  font-weight: 400;
+  font-size: 44px;
+  margin-bottom: 16px;
+}
+.content_dis > h2 > span {
+  font-size: 12px;
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 400;
+  padding-left: 24px;
+}
+.content_dis > .iden_text {
+  position: relative;
+  width: 1200px;
+}
+
+.content_dis > .iden_text > img {
+  position: relative;
+  padding: 32px;
+  width: 200px;
+}
+.content_dis > .iden_text > P {
+  position: absolute;
+  top: 32px;
+  right: 0;
+  width: 900px;
+  font-size: 13px;
+  line-height: 1.5;
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 400;
+}
+
+.colorpallete {
+  position: absolute;
+  top: 30px;
+  right: 150px;
+}
+.colorpallete > a {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+}
+
+.hwang_product > img {
+  margin: 0 0 10px 0;
+}
+.hwang_product > ul {
+  margin: 90px 0 0 0;
+}
+
+.hwang_product > ul > li {
+  width: 1200px;
+  margin-bottom: 40px;
+  box-shadow: 0px 0px 6px #d1d1d1;
+}
